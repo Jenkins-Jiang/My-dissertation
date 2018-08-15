@@ -1,0 +1,65 @@
+
+
+<header>
+	<div class="welcome">
+	<script>
+	var time=new Date();
+	var hour=time.getHours();
+	if (hour<4) {
+		document.write("凌晨好!");
+	} 
+	else if(hour<6){
+		document.write("早上好!");
+	} 
+	else if(hour<11){
+		document.write("上午好！");
+	}
+	else if(hour<13){
+		document.write("中午好！");
+	}
+	else if(hour<18){
+		document.write("下午好！");
+	}
+	else{
+		document.write("晚上好！");
+	}
+	function shoucang(){
+		  	alert('收藏失败！请使用CTRL+D进行')
+		  }
+	function wuxiao(){
+		alert('该功能正在完善，请稍后再试！')
+	}
+	function wangji(){
+		alert('请将您的用户名用邮件发送至jjy@qq.com找回！')
+	}
+	</script>
+		<span>亲爱的老乡，欢迎您访问农民工之家官网！&ensp;&ensp;</span>
+	<span class="wel">
+		<a href="../.../../admin/login.php">后台登录</a>
+		<span class="glyphicon glyphicon-chevron-right"></span>
+		<a href="../../liuyanban/index.php" >个人服务</a>
+	<span class="glyphicon glyphicon-chevron-right"></span>
+		<a href="" onclick="wuxiao()">网站帮助</a>
+		<span class="glyphicon glyphicon-chevron-right"></span>
+		<a href="" id="shoucang" onclick="shoucang()">我要收藏</a>
+		<span class="glyphicon glyphicon-chevron-right"></span>
+		<a href="" onclick="wuxiao()">设为首页</a>
+	</span>
+	</div>
+	<div class="logo"><a href="../index.php"><img src="../../img/login1.png"  /></a></div>
+	<div style="float: right;">
+		<div id="time">现在时间为：</div>
+	<div id="weather"><!--天气插件-->
+	
+		<iframe name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=7"   width="257" height="100" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+	
+	
+	</div>
+	
+	</div>
+</header>
+
+	
+	
+		
+
