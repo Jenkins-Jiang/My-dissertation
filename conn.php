@@ -22,5 +22,5 @@ error_reporting(E_ALL || ~E_NOTICE); //不显示提示信息
         if($pagenum>=$pagetot){
         $pagenum=$pagetot;
         }
-        $offset=($pagenum-1)*$length;
+        $offset=($pagenum-1)*$length;  
 ?>
